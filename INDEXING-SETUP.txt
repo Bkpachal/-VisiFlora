@@ -1,0 +1,31 @@
+VISIFLORA INDEXING SETUP
+
+Website: https://en-visiflora.vercel.app
+
+FILES INCLUDED
+- robots.txt: allows crawling and points search engines to the sitemap.
+- sitemap.xml: lists the homepage and all published pages.
+- 458624b179014a0bb759617e2c4cdf18.txt: Bing IndexNow verification key file. It must remain in the website root.
+
+BING WEBMASTER / INDEXNOW
+1. Add and verify https://en-visiflora.vercel.app in Bing Webmaster Tools.
+2. Confirm this key file is publicly accessible at:
+   https://en-visiflora.vercel.app/458624b179014a0bb759617e2c4cdf18.txt
+3. Submit the sitemap:
+   https://en-visiflora.vercel.app/sitemap.xml
+4. Use Bing Webmaster Tools URL Submission / IndexNow to notify Bing of your URLs.
+   A key file alone does not guarantee indexing.
+
+GOOGLE SEARCH CONSOLE
+Google does not use an IndexNow key file or a generic Google indexing HTML file for normal website verification.
+1. Add the exact URL-prefix property https://en-visiflora.vercel.app in Google Search Console.
+2. Choose HTML tag or HTML file verification.
+3. Copy the unique verification token/file supplied by your own Search Console account.
+4. Add that exact token/file to this project and redeploy.
+5. Submit https://en-visiflora.vercel.app/sitemap.xml in Search Console.
+
+IMPORTANT
+- Search engine submission does not guarantee indexing or ranking.
+- Keep canonical URLs aligned with the deployed website domain.
+- If you later use a custom domain, update canonical URLs, sitemap.xml and robots.txt.
+- This site does not use Google's restricted Indexing API for ordinary product pages.
